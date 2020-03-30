@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_margin="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/kz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Қазақыстан"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/world"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Дүние жүзі"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="Жалпы саны"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Бүгін қосылғандар"
+                app:layout_constraintEnd_toEndOf="@+id/all"
+                app:layout_constraintStart_toStartOf="@+id/all"
+                app:layout_constraintTop_toBottomOf="@+id/all" />
+
+            <TextView
+                android:id="@+id/rec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Жазылғандар"
+                app:layout_constraintEnd_toEndOf="@+id/today"
+                app:layout_constraintStart_toStartOf="@+id/today"
+                app:layout_constraintTop_toBottomOf="@+id/today" />
+
+            <TextView
+                android:id="@+id/death"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Қайтыс болғандар"
+                app:layout_constraintEnd_toEndOf="@+id/rec"
+                app:layout_constraintStart_toStartOf="@+id/rec"
+                app:layout_constraintTop_toBottomOf="@+id/rec" />
+
+            <TextView
+                android:id="@+id/allnum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="num"
+                app:layout_constraintBottom_toBottomOf="@+id/all"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/all" />
+
+            <TextView
+                android:id="@+id/today_kz"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/today"
+                app:layout_constraintStart_toStartOf="@+id/allnum"
+                app:layout_constraintTop_toTopOf="@+id/today"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/recovery_kz"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/rec"
+                app:layout_constraintStart_toStartOf="@+id/today_kz"
+                app:layout_constraintTop_toTopOf="@+id/rec" />
+
+            <TextView
+                android:id="@+id/death_kz"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/death"
+                app:layout_constraintStart_toStartOf="@+id/recovery_kz"
+                app:layout_constraintTop_toTopOf="@+id/death"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/allnum_world"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/all"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/all" />
+
+            <TextView
+                android:id="@+id/today_world"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/today"
+                app:layout_constraintEnd_toEndOf="@+id/allnum_world"
+                app:layout_constraintTop_toTopOf="@+id/today" />
+
+            <TextView
+                android:id="@+id/recovery_world"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/rec"
+                app:layout_constraintEnd_toEndOf="@+id/today_world"
+                app:layout_constraintTop_toTopOf="@+id/rec" />
+
+            <TextView
+                android:id="@+id/death_world"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/death"
+                app:layout_constraintEnd_toEndOf="@+id/recovery_world"
+                app:layout_constraintTop_toTopOf="@+id/death" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:background="#001A1818"
+        android:backgroundTint="#005C5B5B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="401dp"
+        android:layout_height="249dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/coutry_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="countryName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="32dp"
+                android:text="Жалпы саны"
+                app:layout_constraintEnd_toStartOf="@+id/all_c"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Бүгін қосылғандар"
+                app:layout_constraintEnd_toEndOf="@+id/all"
+                app:layout_constraintStart_toStartOf="@+id/all"
+                app:layout_constraintTop_toBottomOf="@+id/all"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/rec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Жазылғандар"
+                app:layout_constraintEnd_toEndOf="@+id/today"
+                app:layout_constraintStart_toStartOf="@+id/today"
+                app:layout_constraintTop_toBottomOf="@+id/today"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/death"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Қайтыс болғандар"
+                app:layout_constraintEnd_toEndOf="@+id/rec"
+                app:layout_constraintStart_toStartOf="@+id/rec"
+                app:layout_constraintTop_toBottomOf="@+id/rec"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/all_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="112dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/all"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/all"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/today_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/today"
+                app:layout_constraintEnd_toEndOf="@+id/all_c"
+                app:layout_constraintTop_toTopOf="@+id/today" />
+
+            <TextView
+                android:id="@+id/rec_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/rec"
+                app:layout_constraintEnd_toEndOf="@+id/today_c"
+                app:layout_constraintTop_toTopOf="@+id/rec" />
+
+            <TextView
+                android:id="@+id/death_c"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="@+id/death"
+                app:layout_constraintEnd_toEndOf="@+id/rec_c"
+                app:layout_constraintTop_toTopOf="@+id/death" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
