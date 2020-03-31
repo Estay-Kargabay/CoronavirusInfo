@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
             override fun onResponse(call: Call?, response: Response?) {
                 val body = response?.body()?.string()
                // println(body)
-               // Log.d("demo","$body")
+               // log.d("demo","$body")
                // textView.text=body
                 if (body!==null){
                     search_edittext.text.clear()
@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
     fun kzJson() {
         println("Attempting to Fetch JSON")
         val url = "https://coronavirus-19-api.herokuapp.com/countries/Kazakhstan"
-       // Log.d("ddd","sdncjsdnvkdnvndkdvcskcmdskncndskvs>>>>>>>>>$country")
+       // log.d("ddd","sdncjsdnvkdnvndkdvcskcmdskncndskvs>>>>>>>>>$country")
         val request = Request.Builder().url(url).build()
         val client = OkHttpClient()
         client.newCall(request).enqueue(object : Callback {
@@ -86,7 +86,7 @@ class MainActivity : AppCompatActivity() {
             override fun onResponse(call: Call?, response: Response?) {
                 val body = response?.body()?.string()
                 // println(body)
-                // Log.d("demo","$body")
+                // log.d("demo","$body")
                 // textView.text=body
                 if (body!==null){
                     search_edittext.text.clear()
@@ -124,7 +124,7 @@ class MainActivity : AppCompatActivity() {
     fun WorldJson() {
         println("Attempting to Fetch JSON")
         val url = "https://coronavirus-19-api.herokuapp.com/all"
-        // Log.d("ddd","sdncjsdnvkdnvndkdvcskcmdskncndskvs>>>>>>>>>$country")
+        // log.d("ddd","sdncjsdnvkdnvndkdvcskcmdskncndskvs>>>>>>>>>$country")
         val request = Request.Builder().url(url).build()
         val client = OkHttpClient()
         client.newCall(request).enqueue(object : Callback {
@@ -136,7 +136,7 @@ class MainActivity : AppCompatActivity() {
             override fun onResponse(call: Call?, response: Response?) {
                 val body = response?.body()?.string()
                 // println(body)
-                // Log.d("demo","$body")
+                // log.d("demo","$body")
                 // textView.text=body
                 if (body!==null){
                     search_edittext.text.clear()
