@@ -358,7 +358,7 @@
         android:layout_width="371dp"
         android:layout_height="45dp"
         android:layout_marginTop="52dp"
-        android:hint="Мемілекет атын(Ағылшын тілінде)"
+        android:hint="Мемлекет атын(Ағылшын тілінде)"
         android:textAlignment="center"
         android:textSize="17dp"
         app:layout_constraintEnd_toEndOf="parent"
