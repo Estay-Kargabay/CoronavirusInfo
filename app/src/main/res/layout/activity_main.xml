@@ -108,10 +108,9 @@
 
             <TextView
                 android:id="@+id/allnum_kz"
-                android:layout_width="60dp"
+                android:layout_width="65dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="num"
                 android:textAlignment="viewStart"
                 app:layout_constraintBottom_toBottomOf="@+id/all"
                 app:layout_constraintStart_toStartOf="parent"
@@ -119,9 +118,8 @@
 
             <TextView
                 android:id="@+id/today_kz"
-                android:layout_width="0dp"
+                android:layout_width="65dp"
                 android:layout_height="0dp"
-                android:text="TextView"
                 android:textAlignment="viewStart"
                 app:layout_constraintBottom_toBottomOf="@+id/today"
                 app:layout_constraintEnd_toEndOf="@+id/allnum_kz"
@@ -131,9 +129,8 @@
 
             <TextView
                 android:id="@+id/recovery_kz"
-                android:layout_width="0dp"
+                android:layout_width="65dp"
                 android:layout_height="wrap_content"
-                android:text="TextView"
                 android:textAlignment="viewStart"
                 app:layout_constraintBottom_toBottomOf="@+id/rec"
                 app:layout_constraintEnd_toEndOf="@+id/today_kz"
@@ -142,9 +139,8 @@
 
             <TextView
                 android:id="@+id/death_kz"
-                android:layout_width="0dp"
+                android:layout_width="65dp"
                 android:layout_height="wrap_content"
-                android:text="TextView"
                 android:textAlignment="viewStart"
                 app:layout_constraintBottom_toBottomOf="@+id/death"
                 app:layout_constraintEnd_toEndOf="@+id/recovery_kz"
@@ -154,10 +150,9 @@
 
             <TextView
                 android:id="@+id/allnum_world"
-                android:layout_width="0dp"
+                android:layout_width="65dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
-                android:text="TextView"
                 android:textAlignment="viewStart"
                 app:layout_constraintBottom_toBottomOf="@+id/all"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -167,7 +162,6 @@
                 android:id="@+id/today_world"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="!!!"
                 android:textAlignment="viewStart"
                 app:layout_constraintBottom_toBottomOf="@+id/today"
                 app:layout_constraintEnd_toEndOf="@+id/allnum_world"
@@ -176,9 +170,8 @@
 
             <TextView
                 android:id="@+id/recovery_world"
-                android:layout_width="0dp"
+                android:layout_width="65dp"
                 android:layout_height="wrap_content"
-                android:text="TextView"
                 android:textAlignment="viewStart"
                 app:layout_constraintBottom_toBottomOf="@+id/rec"
                 app:layout_constraintEnd_toEndOf="@+id/today_world"
@@ -187,9 +180,8 @@
 
             <TextView
                 android:id="@+id/death_world"
-                android:layout_width="0dp"
+                android:layout_width="65dp"
                 android:layout_height="wrap_content"
-                android:text="TextView"
                 android:textAlignment="viewStart"
                 app:layout_constraintBottom_toBottomOf="@+id/death"
                 app:layout_constraintEnd_toEndOf="@+id/recovery_world"
@@ -200,7 +192,6 @@
                 android:id="@+id/Todaydeath_kz"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="TextView"
                 android:textAlignment="textStart"
                 app:layout_constraintBottom_toBottomOf="@+id/today_death"
                 app:layout_constraintEnd_toEndOf="@+id/death_kz"
@@ -209,9 +200,8 @@
 
             <TextView
                 android:id="@+id/Todaydeath_world"
-                android:layout_width="0dp"
+                android:layout_width="65dp"
                 android:layout_height="wrap_content"
-                android:text="!!!"
                 android:textAlignment="viewStart"
                 app:layout_constraintBottom_toBottomOf="@+id/today_death"
                 app:layout_constraintEnd_toEndOf="@+id/death_world"
